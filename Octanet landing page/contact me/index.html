@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Add your CSS styles here */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .section__subtitle {
+      display: block;
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .section__title {
+      display: block;
+      text-align: center;
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .contact__container,
+    .skills__container {
+      margin-top: 50px;
+    }
+
+    .contact__content,
+    .skills__content {
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .contact__title,
+    .skills__title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .contact__title-info {
+      color: #1abc9c;
+    }
+
+    .contact__title-form,
+    .skills__title {
+      color: #3498db;
+    }
+
+    .contact__info,
+    .skills__box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .contact__card,
+    .skills__group {
+      flex-basis: 32%;
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact__card-icon,
+    .skills__data i {
+      font-size: 30px;
+      margin-bottom: 10px;
+      color: #1abc9c;
+    }
+
+    .contact__card-title,
+    .skills__name {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .contact__card-data,
+    .skills__level {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .contact__button {
+      display: inline-block;
+      background-color: #1abc9c;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .contact__button:hover {
+      background-color: #16a085;
+    }
+
+    .contact__form,
+    .skills__box {
+      margin-top: 20px;
+    }
+
+    .contact__form-div,
+    .skills__group {
+      margin-bottom: 20px;
+    }
+
+    .contact__form-tag,
+    .skills__name {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .contact__form-input,
+    .contact__form-input textarea,
+    .skills__level {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #2980b9;
+    }
+
+    /* PHOTO Section */
+    .photo {
+      text-align: center;
+    }
+
+    .photo__container {
+      padding: 20px;
+    }
+
+    .photo__image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Responsive Media Queries */
+    @media screen and (max-width: 767px) {
+      /* For small screens (e.g., mobile phones) */
+      .grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+      .contact__card,
+      .skills__group {
+        flex-basis: 100%;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      /* For medium-sized screens (e.g., tablets) */
+      .grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      }
+    }
+  </style>
+  <title>Contact Me</title>
+</head>
+<body>
+  <main>
+    <!--=============== PHOTO ===============-->
+    <section class="photo section">
+      <div class="photo__container">
+        <img src="ppp.jfif" alt="Your Photo" class="photo__image">
+      </div>
+    </section>
+
+    <!--=============== CONTACT ===============-->
+    <section class="contact section" id="contact">
+
+      <span class="section__subtitle">Get in touch</span>
+      <h3 class="section__title">Contact Me</h3>
+
+      <div class="contact__container container grid">
+
+
+        <div class="contact__content">
+          <h3 class="contact__title contact__title-info">Talk to me</h3>
+
+          <div class="contact__info">
+            <div class="contact__card">
+              <i class='bx bx-mail-send contact__card-icon'></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">advindiancoder@gmail.com</span>
+
+              <a href="mailto:example@domain.com" target="_blank" class="contact__button">
+                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+              </a>
+            </div>
+
+            <div class="contact__card">
+              <i class='bx bxl-whatsapp contact__card-icon'></i>
+              <h3 class="contact__card-title">Whatsapp</h3>
+              <span class="contact__card-data">9262955192</span>
+
+              <a href="https://api.whatsapp.com/send?phone=+919262955192&text=Hey there!" target="_blank"
+                class="contact__button">
+                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+              </a>
+            </div>
+
+            <div class="contact__card">
+              <i class='bx bxl-twitter contact__card-icon'></i>
+              <h3 class="contact__card-title">Twitter</h3>
+              <span class="contact__card-data">ADV_Indian_coder</span>
+
+              <a href="https://twitter.com/ADV_India_coder" target="_blank" class="contact__button">
+                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__content">
+          <h3 class="contact__title contact__title-form">Write Me your Message</h3>
+
+          <form action="" class="contact__form">
+            <div class="contact__form-div">
+              <label for="" class="contact__form-tag">Name</label>
+              <input type="text" placeholder="Enter name" class="contact__form-input">
+            </div>
+
+            <div class="contact__form-div">
+              <label for="" class="contact__form-tag">Mail</label>
+              <input type="text" placeholder="Enter email" class="contact__form-input">
+            </div>
+
+            <div class="contact__form-div contact__form-area">
+              <label for="" class="contact__form-tag">Message</label>
+              <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message"
+                class="contact__form-input "></textarea>
+            </div>
+
+            <button class="button">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== SKILLS ===============-->
+    <section class="skills section" id="skills">
+      <span class="section__subtitle">My Abilities</span>
+      <h2 class="section__title">My Experience</h2>
+
+      <!--=============== PHOTO FOR SKILLS ===============-->
+      <section class="photo section">
+        <div class="photo__container">
+          <img src="Black Geometric Depop Profile Picture.png" alt="Skills Photo" class="photo__image">
+        </div>
+      </section>
+
+
+      <div class="skills__container container grid">
+        <div class="skills__content">
+          <h3 class="skills__title">Java Developer</h3>
+
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+
+                <div>
+                  <h3 class="skills__name">Java+DSA</h3>
+                  <span class="skills__level">Advanced</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+
+                <div>
+                  <h3 class="skills__name">CSS/SCSS</h3>
+                  <span class="skills__level">Advanced</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+
+                <div>
+                  <h3 class="skills__name">HTML</h3>
+                  <span class="skills__level">Advanced</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+
+                <div>
+                  <h3 class="skills__name">Javascript</h3>
+                  <span class="skills__level">Basics</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+
+                <div>
+                  <h3 class="skills__name">Git</h3>
+                  <span class="skills__level">Advanced</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+
+                <div>
+                  <h3 class="skills__name">Spring Boot</h3>
+                  <span class="skills__level">Advanced</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__content">
+          <h3 class="skills__title">Backend Development</h3>
+
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+
+                <div>
+                  <h3 class="skills__name">Spring Boot</h3>
+                  <span class="skills__level">Advanced</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+
+                <div>
+                  <h3 class="skills__name">JPA</h3>
+                  <span class="skills__level">Basics</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+
+                <div>
+                  <h3 class="skills__name">RESTful APIs</h3>
+                  <span class="skills__level">Advanced</span>
+                </div>
+              </div>
+            </div>
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+
+                <div>
+                  <h3 class="skills__name"> Micro-services</h3>
+                  <span class="skills__level">Intermediate</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+
+                <div>
+                  <h3 class="skills__name">System Design</h3>
+                  <span class="skills__level">Advanced 
+                    
+                    NOTE :- it's not Backend</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class='bx bxs-badge-check'></i>
+
+                <div>
+                  <h3 class="skills__name">DBMS & JDBC</h3>
+                  <span class="skills__level">Advanced
+                    
+                    NOTE :- it's not Backend</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
