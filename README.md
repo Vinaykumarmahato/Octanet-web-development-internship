@@ -18,7 +18,7 @@ We look forward to a productive and fruitful association that will equip you for
 
 # Task 
 
-## Task 1 - Landing Page
+## Task 1 - Landing Page [Live](https://landing-page2-adv.netlify.app/)
 
 A landing page is one of the best web development projects for beginners. It requires a foundational understanding of HTML and CSS. In this project, you will learn how to:
 
