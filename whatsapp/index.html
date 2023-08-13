@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="phone-status-bar">
+        <h1 class="heading-primary">WhatsApp</h1>
+        <div class="phone-status-bar__right-icon">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="menu-bar">
+        <i class="fa fa-camera" aria-hidden="true"></i>
+        <ul class="menu-bar__list">
+            <li class="menu-bar__list-item" onclick="changeTab(1);">Chat</li>
+            <li class="menu-bar__list-item" onclick="changeTab(2);">Status</li>
+            <li class="menu-bar__list-item" onclick="changeTab(3);">Calls</li>
+        </ul>
+    </div>
+
+    <div class="chat-status-call">
+        <div class="chat-container">
+
+            <div class="contact-list">
+                <i class="material-icons">
+                    chat
+                </i>
+            </div>
+
+            <div class="chat-list">
+                <div class="person-profile">
+                    <img src="8888-removebg-preview.png"
+                        alt="" class="user-img">
+                    <div class="person-name">
+                        <h1 class="persion-name-heading">
+                            Vinay software engineer
+                        </h1>
+                        <p class="person-chat">How are you brother</p>
+                    </div>
+                </div>
+                <p class="last-chat-time">12:00 pm</p>
+            </div>
+
+
+
+            <div class="chat-list">
+                <div class="person-profile">
+                    <img src="Black Geometric Depop Profile Picture.png" alt=""
+                        class="user-img">
+                    <div class="person-name">
+                        <h1 class="persion-name-heading">
+                            vinay personal
+                        </h1>
+                        <p class="person-chat">Answer my phone! I need your help... </p>
+                    </div>
+                </div>
+                <p class="last-chat-time">2:30 am</p>
+            </div>
+
+            <div class="chat-list">
+                <div class="person-profile">
+                    <img src="9999-removebg-preview.png" alt=""
+                        class="user-img ">
+                    <div class="person-name">
+                        <h1 class="persion-name-heading">
+                            ADV indian coder
+                            
+                        </h1>
+                        <p class="person-chat">please create some new video sir</p>
+                    </div>
+                </div>
+                <p class="last-chat-time"> 1:00 am</p>
+            </div>
+
+
+            <div class="chat-list">
+                <div class="person-profile">
+                    <img src="https://www.gstatic.com/tv/thumb/persons/487130/487130_v9_ba.jpg" alt="" class="user-img">
+                    <div class="person-name">
+                        <h1 class="persion-name-heading">
+                            Elon Musk
+                        </h1>
+                        <p class="person-chat">Bhai, Mars kab chale...</p>
+                    </div>
+                </div>
+                <p class="last-chat-time">2:00 am</p>
+            </div>
+
+            <div class="chat-list">
+                <div class="person-profile">
+                    <img src="https://images.tribuneindia.com/cms/gall_content/2019/5/2019_5$largeimg16_Thursday_2019_202625271.jpg"
+                        alt="" class="user-img">
+                    <div class="person-name">
+                        <h1 class="persion-name-heading">
+                            CarryMinati
+                        </h1>
+                        <p class="person-chat">Yalgaar Ho..<span class="tick">&#10003;</span><span
+                                class="tick2">&#10003;</span></p>
+                        </p>
+                    </div>
+                </div>
+                <p class="last-chat-time">12:00 pm</p>
+            </div>
+
+
+            <div class="chat-list">
+                <div class="person-profile">
+                    <img src="https://c.ndtvimg.com/2020-03/6qjpm0h8_narendra-modi-address-pti_625x300_19_March_20.jpg"
+                        alt="" class="user-img">
+                    <div class="person-name">
+                        <h1 class="persion-name-heading">
+                            Narendra Modi
+                        </h1>
+                        <p class="person-chat">Mere 20 lakh carore kab milenge...<span class="tick">&#10003;</span><span
+                                class="tick2">&#10003;</span></p>
+                    </div>
+                </div>
+                <p class="last-chat-time">12:00 pm</p>
+            </div>
+
+
+            <div class="chat-list">
+                <div class="person-profile">
+                    <img src="https://www.gstatic.com/tv/thumb/persons/614/614_v9_bc.jpg" alt="" class="user-img">
+                    <div class="person-name">
+                        <h1 class="persion-name-heading">
+                            Bill Gates
+                        </h1>
+                        <p class="person-chat">Nayi company banai toh main baat nahin karta..</p>
+                    </div>
+                </div>
+                <p class="last-chat-time">12:00 pm</p>
+            </div>
+
+            <div class="chat-list">
+                <div class="person-profile">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="" class="user-img">
+                    <div class="person-name">
+                        <h1 class="persion-name-heading">
+                            Coffin Dancer
+                        </h1>
+                        <p class="person-chat">Ek Baar bahar to aake dekh...</p>
+                    </div>
+                </div>
+                <p class="last-chat-time">12:00 pm</p>
+            </div>
+
+            <div class="chat-list">
+                <div class="person-profile">
+                    <img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-75490,resizemode-1,msid-75729632/coronavirus-us-president-donald-trump-to-look-into-legislation-proposing-to-sanctions-on-china.jpg"
+                        alt="" class="user-img">
+                    <div class="person-name">
+                        <h1 class="persion-name-heading">
+                            Donald Trump
+                        </h1>
+                        <p class="person-chat">Bhidu, China Pr Hamla Kab Karna Hai...</p>
+                    </div>
+                </div>
+                <p class="last-chat-time">12:00 pm</p>
+            </div>
+        </div>
+
+        <div class="status-container">
+
+            <div class="status-list-fixed">
+                <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+                <i class="fa fa-camera-retro fa-2x" aria-hidden="true"></i>
+            </div>
+
+
+            <div class="person-profile person-profile-status">
+                <i class="fa fa-plus add-icon" aria-hidden="true"></i>
+                <img src="https://www.searchpng.com/wp-content/uploads/2019/02/Deafult-Profile-Pitcher.png" alt=""
+                    class="user-img">
+                <div class="person-name">
+                    <h2 class="persion-name-heading"> My status </h2>
+                    <p class="person-chat">Tap to see add status upadte</p>
+                </div>
+            </div>
+            <h2 class="recent-update">Recent updates
+            </h2>
+
+            <div class="chat-list">
+                <div class="person-profile">
+                    <img src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5c7d7829a7ea434b351ba0b6%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D206%26cropX2%3D2043%26cropY1%3D250%26cropY2%3D2089"
+                        alt="" class="user-img user-img-status">
+                    <div class="person-name">
+                        <h1 class="persion-name-heading">
+                            Mukesh Ambani
+                        </h1>
+                        <p class="person-chat">42 minutes ago</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="call-container">
+
+            <div class="call-list">
+                <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+            </div>
+            <div class="chat-list">
+                <div class="person-profile">
+                    <img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-75490,resizemode-1,msid-75729632/coronavirus-us-president-donald-trump-to-look-into-legislation-proposing-to-sanctions-on-china.jpg"
+                        alt="" class="user-img">
+                    <div class="person-name">
+                        <h1 class="persion-name-heading">
+                            Donald Trump
+                        </h1>
+                        <p class="person-chat"> Today, 1:22am</p>
+                    </div>
+                </div>
+                <p class="last-chat-time"><i class="fa fa-phone fx-4x call-icon" aria-hidden="true"></i></p>
+            </div>
+
+            <div class="chat-list">
+                <div class="person-profile">
+                    <img src="https://c.ndtvimg.com/2020-03/6qjpm0h8_narendra-modi-address-pti_625x300_19_March_20.jpg"
+                        alt="" class="user-img" alt="" class="user-img">
+                    <div class="person-name">
+                        <h1 class="persion-name-heading">
+                            Narendra Modi
+                        </h1>
+                        <p class="person-chat"> Today, 2 :22am</p>
+                    </div>
+                </div>
+                <p class="last-chat-time"><i class="fa fa-video-camera call-icon" aria-hidden="true"></i></p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
