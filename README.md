@@ -28,4 +28,9 @@ A landing page is one of the best web development projects for beginners. It req
 
 Attention to detail is key. Pay close attention to alignment, padding, color palettes, and boxes. Ensure that your CSS skills are on point to avoid any overlapping elements.
 
+## Task 2
 
+- To do List
+
+## Task 3
+- clone website
